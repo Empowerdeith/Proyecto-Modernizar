@@ -1,0 +1,28 @@
+#barraNavegador {
+    background-color: #0b223f !important;
+    /* se necesita important a veces porque bootstrap no nos deja cambiar ciertos colores, entonces le decimos que es !important para forzar a que lo haga*/
+}
+
+#contenido {
+    min-height: 900px !important;
+}
+
+body {
+    background-color: #ffffff !important;
+}
+
+footer {
+    /*background-color: #116490 !important;*/
+    background-color: #0b223f !important;
+}
+
+#boton {
+    background-color: indigo !important;
+    border: none !important;
+}
+
+li,
+a,
+button {
+    text-decoration: none !important;
+}
