@@ -1,0 +1,120 @@
+{% extends "base/base.html" %} {% block contenido %} {% load static %}
+<div class="p-3 my-3 mt-3">
+  <h1 class="text-center blue_colegio font-weight-bold mb-3">
+    ¡Te damos la más cordial bienvenida a nuestro colegio!
+  </h1>
+  <hr class="my-1" />
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 gx-5 mb-4">
+      <div
+        class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+        data-mdb-ripple-color="light"
+      >
+        <img src="" class="img-fluid rounded shadow" />
+        <a href="#!">
+          <div
+            class="mask"
+            style="background-color: rgba(251, 251, 251, 0.15)"
+          ></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6 gx-5 mb-4">
+      <h4 class="mb-3 blue_colegio"><strong>¿Quiénes Somos?</strong></h4>
+      <p class="text-muted" align="justify">
+        El Colegio Jeanne D'Arc fue establecido el 1° de mayo de 1981 y desde
+        entonces nos hemos dedicado a brindar educación de calidad. En la
+        actualidad, ofrecemos programas educativos desde pre kínder hasta 8°
+        básico, atendiendo a una matrícula de 320 estudiantes.
+      </p>
+      <p><strong class="mb-5 blue_colegio">¿Lorem ipsum?</strong></p>
+      <p class="text-muted" align="justify">
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
+        las industrias desde el año 1500, cuando un impresor (N. del T. persona
+        que se dedica a la imprenta) desconocido usó una galería de textos y los
+        mezcló de tal manera que logró hacer un libro de textos especimen. No
+        sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno
+        en documentos electrónicos, quedando esencialmente igual al original.
+        Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+        cuales contenian pasajes de Lorem Ipsum, y más recientemente con
+        software de autoedición, como por ejemplo Aldus PageMaker, el cual
+        incluye versiones de Lorem Ipsum.''
+      </p>
+    </div>
+  </div>
+  <section class="text-center mt-5 mb-5">
+    <h4 class="mb-5 blue_colegio"><strong>Nuestros Talleres</strong></h4>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img
+            src="{% static 'img/talleres/soccer.jpg' %}"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Fútbol</h5>
+            <p class="card-text">
+              El taller de fútbol está integrado por una sección masculina y
+              otra femenina.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="{% static 'img/talleres/reposteria.jpg' %}"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Repostería</h5>
+            <p class="card-text">
+              Este taller se enfoca en la elaboración de postres sencillos y en
+              el aprendizaje de las técnicas de repostería.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="{% static 'img/talleres/apoyopedagogico.jpg' %}"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Apoyo Pedagógico</h5>
+            <p class="card-text">
+              Este taller está diseñado para brindar apoyo a aquellas personas
+              que enfrentan dificultades para aprender de manera rápida.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="{% static 'img/talleres/banda.jpeg' %}"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Banda</h5>
+            <p class="card-text">
+              El taller de banda involucra a un conjunto de estudiantes que
+              tocan instrumentos musicales en conjunto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock contenido %}

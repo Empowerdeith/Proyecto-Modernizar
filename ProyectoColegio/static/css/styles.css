@@ -1,5 +1,5 @@
 #barraNavegador {
-    background-color: #0b223f !important;
+    background-color: #116490 !important;
     /* se necesita important a veces porque bootstrap no nos deja cambiar ciertos colores, entonces le decimos que es !important para forzar a que lo haga*/
 }
 
@@ -12,14 +12,13 @@ body {
 }
 
 footer {
-    /*background-color: #116490 !important;*/
-    background-color: #0b223f !important;
+    background-color: #116490 !important;
 }
 
-#boton {
-    background-color: indigo !important;
-    border: none !important;
+.blue_colegio {
+    color: #116490 !important;
 }
+
 
 li,
 a,
