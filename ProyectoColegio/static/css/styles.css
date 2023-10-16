@@ -28,6 +28,8 @@ button {
 
 .blue_btn {
     background-color: #116490 !important;
+    font-size: large !important;
+    color: #fff !important;
 }
 
 .card-img-top {
