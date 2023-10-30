@@ -15,6 +15,14 @@
   <div class="row">
     <div class="col-sm-4 left d-flex justify-content-center">
       <div class="list-group w-50">
+        {% for curso in cursos %}
+        <a
+          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
+          href="{{ curso.utilesCurso.url }}"
+          role="button"
+          >Pre Kínder</a
+        >
+        {% endfor %}
         <a
           class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
           href="#"
