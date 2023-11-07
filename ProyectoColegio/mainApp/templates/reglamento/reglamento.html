@@ -1,3 +1,27 @@
 {% extends "base/base.html" %} {% block contenido %} {% load static %}
-En Construcción
+<h1 class="pt-5 pb-3 blue_colegio">
+    <i class="fa-solid fa-book"></i> Reglamento Escolar
+  </h1>
+  <hr class="my-1 blue_colegio" style="border-top: 2px solid; opacity: 1" />
+  <div>
+    <p class="mb-5">
+      Estimadas familias,
+      <br />
+      En el enlace podrán visualizar y descargar el reglamento escolar.
+    </p>
+  </div>
+  <div class="container">
+      <div class="d-flex justify-content-center">
+        <div class="list-group w-50">
+          {% for reglamento in reglamento1 %}
+          <a
+            class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
+            href="{{ reglamento.archivo.url }}"
+            role="button"
+            >Reglamento</a
+          >
+          {% endfor %}
+        </div>
+      </div>
+</div>
 {% endblock contenido %}

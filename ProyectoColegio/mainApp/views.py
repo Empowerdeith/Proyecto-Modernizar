@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from .models import Cursos
+from .models import Cursos, Reglamento
 
 # Create your views here.
 
@@ -14,4 +14,5 @@ def utiles(request):
 
 
 def reglamento(request):
-    return render(request, 'reglamento/reglamento.html')
+    reglamento1= Reglamento.objects.all()
+    return render(request, 'reglamento/reglamento.html', {'reglamento1': reglamento1})
