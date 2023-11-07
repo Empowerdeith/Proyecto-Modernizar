@@ -10,18 +10,33 @@
       En el enlace podrán visualizar y descargar el reglamento escolar.
     </p>
   </div>
-  <div class="container">
+  <div class="container pb-5">
       <div class="d-flex justify-content-center">
-        <div class="list-group w-50">
-          {% for reglamento in reglamento1 %}
-          <a
-            class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-            href="{{ reglamento.archivo.url }}"
-            role="button"
-            >Reglamento</a
-          >
-          {% endfor %}
-        </div>
+        {% for reglamento in reglamento1 %}
+          <embed src='{{ reglamento.archivo.url }}' width='100%' height='700'  type="application/pdf" />
+            <!--<object data="{{ reglamento.archivo.url }}" type="application/pdf" width="700" height="100%">
+              <iframe src="{{ reglamento.archivo.url }}" width="100%" height="700" style="border: none;">
+              This browser does not support PDFs. Please download the PDF to view it: 
+              <a href="{{ reglamento.archivo.url }}">Download PDF</a>
+              </iframe>
+            </object>-->
+            <!--<object type="application/pdf" data="{{ reglamento.archivo.url }}" width="100%" height="700"></object>-->
+            <!--<iframe
+            src="#"
+            frameBorder="0"
+            scrolling="auto"
+            height="700"
+            width="100%"></iframe>-->
+
+            <!--<embed src= "{{ reglamento.archivo.url }}" width= "700" height= "375" type="application/pdf">-->
+            <!--<div class="list-group w-50">
+            <a
+                class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
+                href="{{ reglamento.archivo.url }}"
+                role="button"
+                >Reglamento
+            </a>-->
+        {% endfor %}
       </div>
 </div>
 {% endblock contenido %}

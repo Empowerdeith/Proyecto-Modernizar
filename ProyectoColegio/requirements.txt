@@ -13,3 +13,5 @@ tzdata==2023.3
 urllib3==2.0.6
 wheel==0.41.2
 yarg==0.1.9
+
+https://www.reddit.com/r/django/comments/vbj5yy/how_to_set_xframe_options_properly_to_display_a/
