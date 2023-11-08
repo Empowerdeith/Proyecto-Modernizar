@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from .models import Cursos, Reglamento
+from .models import NivTransicion,EdBasica, Reglamento
 from django.views.decorators.clickjacking import xframe_options_sameorigin
 
 # Create your views here.
@@ -10,8 +10,13 @@ def home(request):
 
 
 def utiles(request):
-    cursos = Cursos.objects.all()
-    return render(request, 'utiles/utiles.html', {'cursos': cursos})
+    nivTransicion = NivTransicion.objects.all()
+    edBasica = EdBasica.objects.all()
+    return render(request, 'utiles/utiles.html', {'nivTransicion': nivTransicion, 'edBasica': edBasica})
+    #block1=["Kínder","Pre Kínder","Colación"]
+    
+    #cursos = Cursos.objects.all()
+    #return render(request, 'utiles/utiles.html', {'cursos': cursos, 'block1': block1})
 
 @xframe_options_sameorigin
 def reglamento(request):

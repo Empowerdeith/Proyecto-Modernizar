@@ -15,63 +15,28 @@
   <div class="row">
     <div class="col-sm-4 left d-flex justify-content-center">
       <div class="list-group w-50">
-        {% for curso in cursos %}
-        <a
-          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="{{ curso.utilesCurso.url }}"
-          role="button"
-          >Pre Kínder</a
-        >
+        {% for nivTransicion1 in nivTransicion %}
+            <a
+            class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
+            href="{{ nivTransicion1.utilesCurso.url }}"
+            role="button"
+            >{{ nivTransicion1.nivtransicion }}</a>
         {% endfor %}
-        <a
-          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
-          role="button"
-          >Pre Kínder</a
-        >
-        <a
-          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
-          role="button"
-          >Kínder</a
-        >
-        <a
-          class="btn btn-primary blue_btn rounded-pill list-group-item mb-3"
-          href="#"
-          role="button"
-          >Colación</a
-        >
       </div>
     </div>
-    <div class="col-sm-4 center d-flex justify-content-center">
+    <!--<div class="col-sm-4 center d-flex justify-content-center">-->
+    <div class="col-sm-4 d-flex justify-content-center">
       <div class="list-group w-50">
-        <a
+        {% for edBasica1 in edBasica %}
+          <a
           class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
+          href="{{ edBasica1.utilesCurso.url }}"
           role="button"
-          >1° Básico</a
-        >
-        <a
-          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
-          role="button"
-          >2° Básico</a
-        >
-        <a
-          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
-          role="button"
-          >3° Básico</a
-        >
-        <a
-          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
-          role="button"
-          >4° Básico</a
-        >
+          >{{ edBasica1.edbasica }}</a>
+        {% endfor %}
       </div>
     </div>
-    <div class="col-sm-4 right d-flex justify-content-center">
+    <!--<div class="col-sm-4 right d-flex justify-content-center">
       <div class="list-group w-50">
         <a
           class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
@@ -98,24 +63,7 @@
           >8° Básico</a
         >
       </div>
-    </div>
+    </div>-->
   </div>
-
-  <!--<div class="row">
-            <div class="col-sm-6 left">
-              <ul class="list-group">
-                <li class="list-group-item">
-                    <button type="button" class="list-group-item list-group-item-action">1° año básico</button>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-6 right">
-              <ul class="list-group">
-                <li class="list-group-item">
-                    <button type="button" class="list-group-item list-group-item-action px-1">1° año básico</button>
-                </li>
-              </ul>
-            </div>
-          </div>-->
 </div>
 {% endblock contenido %}
