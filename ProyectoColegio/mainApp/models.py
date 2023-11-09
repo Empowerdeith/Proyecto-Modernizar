@@ -8,36 +8,38 @@ class Reglamento(models.Model):
     def __str__(self):
         return self.nombre
 
-
-"""class Cursos(models.Model):
-    curso = models.CharField(max_length=150, null=False, blank=False)
-    utilesCurso = models.FileField(upload_to='uploads/cursos/')
-
-    class Meta:
-        verbose_name = "Cursos"
-        verbose_name_plural = "Cursos"
-
-    def __str__(self):
-        return self.curso"""
-    
-class NivTransicion(models.Model):
-    nivtransicion = models.CharField(max_length=150, null=False, blank=False)
-    utilesCurso = models.FileField(upload_to='uploads/nivtransicion/')
+        
+class ToolsLeft(models.Model):
+    nombre = models.CharField(max_length=150, null=False, blank=False)
+    utilesCurso = models.FileField(upload_to='uploads/tools/')
 
     class Meta:
-        verbose_name = "NivTransicion"
-        verbose_name_plural = "Nivel de Transición"
+        verbose_name = "Utiles Izquierda"
+        verbose_name_plural = "Utiles Barra Izquierda"
 
     def __str__(self):
-        return self.nivtransicion
+        return self.nombre
 
-class EdBasica(models.Model):
-    edbasica = models.CharField(max_length=150, null=False, blank=False)
-    utilesCurso = models.FileField(upload_to='uploads/edbasica/')
+   
+class ToolsCenter(models.Model):
+    nombre = models.CharField(max_length=150, null=False, blank=False)
+    utilesCurso = models.FileField(upload_to='uploads/tools/')
 
     class Meta:
-        verbose_name = "EdBasica"
-        verbose_name_plural = "Enseñanza Básica"
+        verbose_name = "Utiles Centro"
+        verbose_name_plural = "Utiles Barra Central"
 
     def __str__(self):
-        return self.edbasica
+        return self.nombre
+
+  
+class ToolsRight(models.Model):
+    nombre = models.CharField(max_length=150, null=False, blank=False)
+    utilesCurso = models.FileField(upload_to='uploads/tools/')
+
+    class Meta:
+        verbose_name = "Utiles Derecha"
+        verbose_name_plural = "Utiles Barra Derecha"
+
+    def __str__(self):
+        return self.nombre

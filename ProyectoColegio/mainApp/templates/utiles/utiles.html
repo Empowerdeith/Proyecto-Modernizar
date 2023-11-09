@@ -15,55 +15,37 @@
   <div class="row">
     <div class="col-sm-4 left d-flex justify-content-center">
       <div class="list-group w-50">
-        {% for nivTransicion1 in nivTransicion %}
+        {% for toolsLeft1 in toolsLeft %}
             <a
             class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-            href="{{ nivTransicion1.utilesCurso.url }}"
+            href="{{ toolsLeft1.utilesCurso.url }}"
             role="button"
-            >{{ nivTransicion1.nivtransicion }}</a>
+            >{{ toolsLeft1.nombre }}</a>
         {% endfor %}
       </div>
     </div>
-    <!--<div class="col-sm-4 center d-flex justify-content-center">-->
-    <div class="col-sm-4 d-flex justify-content-center">
+    <div class="col-sm-4 center d-flex justify-content-center">
       <div class="list-group w-50">
-        {% for edBasica1 in edBasica %}
+        {% for toolsCenter1 in toolsCenter %}
           <a
           class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="{{ edBasica1.utilesCurso.url }}"
+          href="{{ toolsCenter1.utilesCurso.url }}"
           role="button"
-          >{{ edBasica1.edbasica }}</a>
+          >{{ toolsCenter1.nombre }}</a>
         {% endfor %}
       </div>
     </div>
-    <!--<div class="col-sm-4 right d-flex justify-content-center">
+    <div class="col-sm-4 right d-flex justify-content-center">
       <div class="list-group w-50">
-        <a
+        {% for toolsRight1 in toolsRight %}
+          <a
           class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
+          href="{{ toolsRight1.utilesCurso.url }}"
           role="button"
-          >5° Básico</a
-        >
-        <a
-          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
-          role="button"
-          >6° Básico</a
-        >
-        <a
-          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
-          role="button"
-          >7° Básico</a
-        >
-        <a
-          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
-          href="#"
-          role="button"
-          >8° Básico</a
-        >
+          >{{ toolsRight1.nombre }}</a>
+        {% endfor %}
       </div>
-    </div>-->
+    </div>
   </div>
 </div>
 {% endblock contenido %}
