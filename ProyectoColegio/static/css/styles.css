@@ -25,3 +25,15 @@ a,
 button {
     text-decoration: none !important;
 }
+
+.blue_btn {
+    background-color: #116490 !important;
+    font-size: large !important;
+    color: #fff !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}

@@ -1,3 +1,54 @@
 {% extends "base/base.html" %} {% block contenido %} {% load static %}
-En Construcción
+<h1 class="pt-5 pb-3 blue_colegio">
+  <i class="fa-solid fa-pen-ruler"></i> Lista de Útiles Escolares 2023
+</h1>
+<hr class="my-1 blue_colegio" style="border-top: 2px solid; opacity: 1" />
+<div>
+  <p class="mb-5">
+    Estimadas familias,
+    <br />
+    En los siguientes enlaces podrán descargar la lista de útiles escolares, por
+    curso, correspondientes al Año Académico 2023:
+  </p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 left d-flex justify-content-center">
+      <div class="list-group w-50">
+        <h5 class="pb-2 pt-2 blue_colegio">Niveles de transición</h5>
+        {% for toolsLeft1 in toolsLeft %}
+            <a
+            class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
+            href="{{ toolsLeft1.utilesCurso.url }}"
+            role="button"
+            >{{ toolsLeft1.nombre }}   <i class="fa-solid fa-chevron-down"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-sm-4 center d-flex justify-content-center">
+      <div class="list-group w-50">
+        <h5 class="pb-2 pt-2 blue_colegio">Enseñanza Básica</h5>
+        {% for toolsCenter1 in toolsCenter %}
+          <a
+          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
+          href="{{ toolsCenter1.utilesCurso.url }}"
+          role="button"
+          >{{ toolsCenter1.nombre }}   <i class="fa-solid fa-chevron-down"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-sm-4 right d-flex justify-content-center">
+      <div class="list-group w-50">
+        <h5 class="pb-2 pt-2 blue_colegio">Enseñanza Básica</h5>
+        {% for toolsRight1 in toolsRight %}
+          <a
+          class="btn btn-primary blue_btn list-group-item rounded-pill mb-3"
+          href="{{ toolsRight1.utilesCurso.url }}"
+          role="button"
+          >{{ toolsRight1.nombre }}   <i class="fa-solid fa-chevron-down"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock contenido %}
