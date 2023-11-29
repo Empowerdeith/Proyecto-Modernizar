@@ -4,15 +4,16 @@
 </h1>
 <hr class="my-1 blue_colegio" style="border-top: 2px solid; opacity: 1" />
 <div>
-  <p class="mb-5">
+  <p class="mb-5 pt-2 text-muted font20">
     Estimadas familias,
     <br />
     En los siguientes enlaces podrán descargar la lista de útiles escolares, por
     curso, correspondientes al Año Académico:
   </p>
 </div>
-<div class="container">
+<div class="container mb-4">
   <div class="row">
+    {%if toolsLeft %}
     <div class="col-sm-4 left d-flex justify-content-center">
       <div class="list-group w-50">
         <h5 class="pb-2 pt-2 blue_colegio">Niveles de transición</h5>
@@ -26,6 +27,7 @@
         {% endfor %}
       </div>
     </div>
+    {%endif%} {%if toolsCenter %}
     <div class="col-sm-4 center d-flex justify-content-center">
       <div class="list-group w-50">
         <h5 class="pb-2 pt-2 blue_colegio">Enseñanza Básica</h5>
@@ -39,6 +41,7 @@
         {% endfor %}
       </div>
     </div>
+    {%endif%} {%if toolsRight %}
     <div class="col-sm-4 right d-flex justify-content-center">
       <div class="list-group w-50">
         <h5 class="pb-2 pt-2 blue_colegio">Enseñanza Básica</h5>
@@ -52,6 +55,7 @@
         {% endfor %}
       </div>
     </div>
+    {%endif%}
   </div>
 </div>
 {% endblock contenido %}

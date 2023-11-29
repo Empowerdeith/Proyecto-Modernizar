@@ -1,21 +1,36 @@
 {% extends "base/base.html" %} {% block contenido %} {% load static %}
 <h1 class="pt-5 pb-3 blue_colegio">
-    <i class="fa-solid fa-book"></i> Reglamento Escolar
-  </h1>
-  <hr class="my-1 blue_colegio" style="border-top: 2px solid; opacity: 1" />
+  <i class="fa-solid fa-book"></i> Reglamento Escolar
+</h1>
+<hr class="my-1 blue_colegio" style="border-top: 2px solid; opacity: 1" />
+<div>
+  <p class="mb-5 pt-2 text-muted font20">
+    Estimadas familias,
+    <br />
+    En esta sección podrán visualizar y descargar el reglamento escolar.
+  </p>
+</div>
+<div class="container pb-5">
+  <div class="d-flex justify-content-center">
+    {% for reglamento in reglamento1 %}
+    <embed
+      src="{{ reglamento.archivo.url }}"
+      width="100%"
+      height="700"
+      type="application/pdf"
+    />
+  </div>
   <div>
-    <p class="mb-5">
-      Estimadas familias,
-      <br />
-      En esta sección podrán visualizar y descargar el reglamento escolar.
+    <p class="pt-4 text-muted font20">
+      En caso de no poder visualizar el documento,
+      <a
+        class="btn btn-primary blue_btn rounded-pill"
+        href="{{ reglamento.archivo.url }}"
+        role="button"
+        >Descargar Pdf <i class="fa-solid fa-chevron-down"></i
+      ></a>
     </p>
   </div>
-  <div class="container pb-5">
-      <div class="d-flex justify-content-center">
-        {% for reglamento in reglamento1 %}
-          <embed src='{{ reglamento.archivo.url }}' width='100%' height='700'  type="application/pdf" />
-           <p class="">En caso de no poder visualizar el documento, <a href="{{ reglamento.archivo.url }}">Descargar pdf</a>.</p>
-        {% endfor %}
-      </div>
+  {% endfor %}
 </div>
 {% endblock contenido %}
