@@ -1,0 +1,43 @@
+#barraNavegador {
+    background-color: #116490 !important;
+    /* se necesita important a veces porque bootstrap no nos deja cambiar ciertos colores, entonces le decimos que es !important para forzar a que lo haga*/
+}
+
+#contenido {
+    min-height: 900px !important;
+}
+
+body {
+    background-color: #ffffff !important;
+}
+
+footer {
+    background-color: #116490 !important;
+}
+
+.blue_colegio {
+    color: #116490 !important;
+}
+
+
+li,
+a,
+button {
+    text-decoration: none !important;
+}
+
+.blue_btn {
+    background-color: #116490 !important;
+    font-size: large !important;
+    color: #fff !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.font20 {
+    font-size: 20px!important;
+}
