@@ -1,4 +1,4 @@
-# Proyecto Modernizar Página Web Escolar
+# Proyecto Modernizar Página Web
 
 ## Descripción
 
