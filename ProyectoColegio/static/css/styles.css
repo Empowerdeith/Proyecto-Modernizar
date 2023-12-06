@@ -19,6 +19,9 @@ footer {
     color: #116490 !important;
 }
 
+.back_cr {
+    background-color: #116490 !important;
+}
 
 li,
 a,
@@ -39,5 +42,5 @@ button {
 }
 
 .font20 {
-    font-size: 20px!important;
+    font-size: 20px !important;
 }
