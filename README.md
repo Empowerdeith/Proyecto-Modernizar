@@ -24,7 +24,7 @@ Este proyecto surge como resultado directo de la formación recibida, asignando 
 
 Se espera que este proyecto de modernización no solo cumpla con los estándares tecnológicos actuales, sino que también siente las bases para futuras expansiones y mejoras en la presencia en línea de la institución.
 
-## Instrucciones para Ejecución Local (si es aplicable)
+## Instrucciones para Ejecución Local
 
 1. Clona este repositorio: `git clone https://github.com/Empowerdeith/Proyecto-Modernizar.git`
 2. Instala las dependencias necesarias: `pip install -r requirements.txt`
