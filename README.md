@@ -6,7 +6,7 @@ Este proyecto surge como resultado directo de la formación recibida, asignando 
 
 ## Detalles Técnicos
 
-- **Tecnologías Utilizadas:** Django y Bootstrap.
+- **Tecnologías Utilizadas:** Django versión 4.2.6 y Bootstrap 5.
 - **Enfoque:** Desarrollo de una interfaz web moderna y funcional que refleje los valores y objetivos institucionales.
 - **Aplicación Práctica:** Implementación directa de conocimientos adquiridos durante la formación, destacando el uso de herramientas avanzadas.
 
