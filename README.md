@@ -26,7 +26,7 @@ Se espera que este proyecto de modernización no solo cumpla con los estándares
 
 ## Instrucciones para Ejecución Local (si es aplicable)
 
-1. Clona este repositorio: `git clone https://github.com/tuusuario/turepositorio.git`
+1. Clona este repositorio: `git clone https://github.com/Empowerdeith/Proyecto-Modernizar.git`
 2. Instala las dependencias necesarias: `pip install -r requirements.txt`
 3. Ejecuta la aplicación: `python manage.py runserver`
 
